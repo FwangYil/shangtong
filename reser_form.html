@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="reser_form.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script src="reser_form.js"></script>
+</head>
+<body data-spy="scroll" data-target="">
+    <div id="reser_form">
+        <div id="header">
+            <h3>Please Fill the Reservation form <span class="glyphicon glyphicon-asterisk" ></span></h3> 
+        </div>
+        <br>
+        <div id="form">
+            <form action="#" role="form">
+
+                <div class="form-group inner-addon left-addon">
+                    <i class="glyphicon glyphicon-user"></i> 
+                    <input type="text" class="form-control" name="surName" placeholder="Surname" id="input" required> 
+                </div>
+                
+                <div class="form-group inner-addon left-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <input type="text" class="form-control" name="middleName" id="input" placeholder="Middle Name" required> 
+                </div>
+
+                 <div class="form-group inner-addon left-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <input type="text" class="form-control" name="otherName" id="input" placeholder="other Names" required> 
+                </div>
+                                
+                <div class="form-group inner-addon left-addon">
+                    <i class="glyphicon glyphicon-home"></i>
+                    <input type="text" class="form-control" name="address" id="input" placeholder="Address" required>
+                </div>
+
+                <div class="form-group inner-addon left-addon">
+                    <i class="glyphicon glyphicon-phone"></i>
+                    <input type="number" class="form-control" name="phoneNumber" id="input" placeholder="Phone Number" required> 
+                </div>
+
+                <div class="form-group inner-addon left-addon">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                     <input type="email" class="form-control" name="email" id="input" placeholder="Email" required>
+                </div>
+
+                 <div class="form-group">
+                    <select name="Gender" id="input" class="form-control">
+                        <option value="select-gender">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>               
+
+                <div class="form-group">
+                    <select name="room" id="input" class="form-control">
+                        <option value="Room Pick">Select the suite You will like to louge in!</option>
+                        <option value="room-picker">Executive</option>
+                        <option value="room-pick">Diamiond</option>
+                    </select>
+                </div>
+               
+            </form>
+
+             <form action="" class="form-inline">
+                <div class="form-group">
+                    <select name="Arrival" id="input" class="form-control" required>
+                        <option value="select ">Arrival time</option>
+                        <option value="1 day">One Day</option>
+                        <option value="2 Days">Two Days</option>
+                        <option value="1 week"> One week</option>
+                        <option value="1 Month">One Month</option>
+                        <option value="1 Year">One Year</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <select name="Departure" id="input" class="form-control" required>
+                        <option value="select ">Departure time</option>
+                        <option value="1 day">One Day</option>
+                        <option value="2 Days">Two Days</option>
+                        <option value="1 week"> One week</option>
+                        <option value="1 Month">One Month</option>
+                        <option value="1 Year">One Year</option>
+                    </select>
+                </div>
+                </form>
+        </div>
+        <div id ="table">
+            <table>
+                <caption><b> Our Services</b></caption>
+                <tr>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Accommodation</td>
+                        <td>N2999.99</td>
+                    </tr>
+                    <tr>
+                        <td>Laudary</td>
+                        <td>3500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Catering</td>
+                        <td>4500.00</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td>0.00</td>
+                    </tr>
+                </tr>
+            </table>
+        </div> <br>
+        
+           <button type="submit" class="btn btn-primary" id="submitBtn">Proceed to payment</button>
+
+            <footer>
+                &copy; Copy Right 2019. 
+            </footer>
+    
+    </div>
+   
+</body>
+</html>
